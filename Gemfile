@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 gem 'pg'
 gem 'high_voltage'
+gem 'bootstrap-sass'
 
 group :test do
   gem 'capybara'
