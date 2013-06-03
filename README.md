@@ -6,6 +6,11 @@ Please see below for a more in depth description of the what the app is.
 
 ## Development Setup
 
+```ruby
+git clone git@github.com:drapergeek/kix.git
+cd kix
+bin/setup
+```
 
 ## Explanation
 
