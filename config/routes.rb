@@ -1,3 +1,4 @@
 Kix::Application.routes.draw do
-  root to: 'high_voltage/pages#show', id: 'home'
+  resources :games, only: [:new, :create, :show]
+  root to: 'games#new'
 end
