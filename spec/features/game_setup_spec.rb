@@ -31,7 +31,7 @@ end
 
 def verify_game_started
   expect(page).to have_content 'Your game has started'
-  expect(page).to have_link 'Setup your hero'
+  expect(page).to have_link 'Set up your hero'
 end
 
 def verify_game_is_already_started
