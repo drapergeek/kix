@@ -10,6 +10,12 @@ test:
   database: kix_test
   host: localhost
 
+stagin:
+  adapter: postgresql
+  encoding: unicode
+  database: staging_production
+  host: localhost
+
 production:
   adapter: postgresql
   encoding: unicode
