@@ -2,7 +2,8 @@ require 'spec_helper'
 
 feature 'User sets up hero' do
   scenario 'create a new hero' do
-    visit new_character_path
+    setup_game
+    click_on 'Set up your hero'
     fill_in_character_information
     expect_character_information_to_be_shown
   end

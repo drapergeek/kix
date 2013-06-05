@@ -24,11 +24,6 @@ feature 'game setup' do
   end
 end
 
-def setup_game
-  visit root_path
-  click_on 'Start New Game'
-end
-
 def verify_game_started
   expect(page).to have_content 'Your game has started'
   expect(page).to have_link 'Set up your hero'
@@ -52,12 +47,12 @@ def verify_invitations_were_sent
   expect(email.body).to include 'http://kix.dev/invitations'
 end
 
- def click_invitation_link
-   game = Game.create
-   visit invitation_url(game)
- end
+def click_invitation_link
+  game = Game.create
+  visit invitation_url(game)
+end
 
- def verify_joined_game
-   verify_game_started
-   expect(page).to have_content "Thanks for joining the game!"
- end
+def verify_joined_game
+  verify_game_started
+  expect(page).to have_content "Thanks for joining the game!"
+end
