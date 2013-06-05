@@ -11,6 +11,7 @@ gem 'pg'
 gem 'high_voltage'
 gem 'bootstrap-sass'
 gem 'email_spec'
+gem 'simple_form'
 
 group :test do
   gem 'capybara'
