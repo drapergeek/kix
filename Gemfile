@@ -10,10 +10,15 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'pg'
 gem 'high_voltage'
 gem 'bootstrap-sass'
+gem 'email_spec'
 
 group :test do
   gem 'capybara'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'database_cleaner'
+end
+
+group :development do
+  gem 'letter_opener'
 end
