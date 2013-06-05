@@ -3,5 +3,7 @@ Kix::Application.routes.draw do
 
   resources :games, only: [:new, :create, :show]
   resources :invitations, only: [:new, :create, :show]
-  resources :characters, only: [:new, :create, :show]
+  resources :characters, only: [:new, :create, :show] do
+    resource :hp_change, only: [:create]
+  end
 end
