@@ -1,0 +1,7 @@
+<%= simple_form_for([:character, @modifier]) do |form| %>
+  <%= form.input :name, label: 'Modifier Type' do %>
+    <%= form.select :name, grouped_options_for_select(ModifierInformation::TYPES) %>
+  <% end %>
+  <%= form.submit 'Add' %>
+<% end %>
+

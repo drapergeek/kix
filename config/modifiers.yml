@@ -1,0 +1,15 @@
+"Damage Modification":
+  - -1 Damage Taken
+  - +1 Damage Taken
+  - -1 Damage Dealt
+  - +1 Damage Dealt
+"Damage Types":
+  - "Immune to All Damage"
+  - "All Damage: Melee"
+  - "All Damage: Toxic"
+  - "All Damage: Fire"
+"Other":
+  - You Cannot Play Cards
+  - You Cannot Draw Cards
+  - You Cannot Use Powers
+  - You Cannot Deal Damage

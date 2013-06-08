@@ -2,5 +2,9 @@ Player: <%= @character.player_name %>
 Character: <%= @character.character_name %>
 Max HP: <%= @character.max_hp %>
 Current HP: <%= @character.current_hp %>
+<ul>
+  <%= render @character.modifiers %>
+</ul>
 <%= button_to '-', character_hp_change_path(@character, type: '-') %>
 <%= button_to '+', character_hp_change_path(@character, type: '+') %>
+<%= link_to 'Add Modifier', new_character_modifier_path(@character) %>
