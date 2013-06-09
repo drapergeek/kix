@@ -31,7 +31,7 @@ end
 
 def verify_game_is_already_started
   verify_game_started
-  expect(page).to have_content 'You already have a game started.'
+  expect(page).to have_content 'Invite Friends'
 end
 
 def send_invitations

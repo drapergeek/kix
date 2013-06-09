@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
   end
 
   def current_game
-    Game.find_by_id(session[:game_id])
+    @game ||= Game.find_by_id(session[:game_id])
   end
 
   def current_character
