@@ -1,8 +1,7 @@
 class GamesController < ApplicationController
   def new
-    if current_game
-      flash[:notice] = 'You already have a game started.'
-      redirect_to current_game
+    if current_character_or_game
+      redirect_to current_character_or_game
     end
   end
 
@@ -14,5 +13,11 @@ class GamesController < ApplicationController
 
   def show
 
+  end
+
+  private
+
+  def current_character_or_game
+    current_character || current_game
   end
 end

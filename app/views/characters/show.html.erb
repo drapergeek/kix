@@ -1,6 +1,21 @@
-Player: <%= @character.player_name %>
-Character: <%= @character.character_name %>
-Max HP: <%= @character.max_hp %>
-Current HP: <%= @character.current_hp %>
-<%= button_to '-', character_hp_change_path(@character, type: '-') %>
-<%= button_to '+', character_hp_change_path(@character, type: '+') %>
+<h2><%= @character.character_name %></h2>
+<p>Max: <%= @character.max_hp %> | Current <%= @character.current_hp %></p>
+
+<table class='table table-striped table-condensed table-bordered'>
+  <%= render @character.modifiers %>
+</table>
+
+<div class="btn-group">
+  <%= link_to '-',
+      character_hp_change_path(@character, type: '-'),
+      method: 'post',
+      class: 'btn' %>
+  <%= link_to '+',
+      character_hp_change_path(@character, type: '+'),
+      method: 'post',
+      class: 'btn' %>
+</div>
+
+<div class='btn-group'>
+  <%= link_to 'Add Modifier', new_character_modifier_path(@character), class: 'btn' %>
+</div>

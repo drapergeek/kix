@@ -9,6 +9,7 @@ class CharactersController < ApplicationController
     @character = Character.new(character_params)
 
     if @character.save
+      set_current_character(@character)
       flash[:notice] = 'You have successfully created your character.'
     end
 

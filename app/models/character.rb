@@ -1,5 +1,6 @@
 class Character < ActiveRecord::Base
   before_validation :set_starting_hp
+  has_many :modifiers
   validates :current_hp, numericality: { less_than_or_equal_to: :max_hp, message: 'cannot exceed max hp' }
 
   def modify_hp(decrement = true)

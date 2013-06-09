@@ -1,0 +1,9 @@
+<tr class='modifier'>
+  <td>
+    <%= modifier.name %>
+    <%= link_to 'x',
+        character_modifier_path(current_character, modifier),
+        method: :delete,
+        class: 'close' %>
+ </td>
+</tr>
