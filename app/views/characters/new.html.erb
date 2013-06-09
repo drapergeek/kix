@@ -1,6 +1,8 @@
 <%= simple_form_for @character do |f| %>
   <%= f.input :player_name %>
-  <%= f.input :character_name %>
+  <%= f.input :character_name,
+    collection: CharacterNames::HEROES,
+    label: 'Character' %>
   <%= f.input :max_hp, label: 'Max HP' %>
   <%= f.button :submit %>
 <% end %>

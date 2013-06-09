@@ -1,0 +1,20 @@
+"Baron Blade":
+  "Mobile Defense Platform":
+    hp: 10
+  "Elemental Redistributor":
+    hp: 10
+  "Blade Battalion":
+    hp: 5
+  "Powered Remote Turret":
+    hp: 7
+  "Mobile Defense Platform":
+    hp: 10
+"Omnitron":
+  "S-84 Automaton Drone":
+    hp: "h"
+  "Electro-Pulse Explosive":
+    hp: 15
+  "S-83 Assault Drone":
+    hp: 4
+  "S-85 Repair Drone":
+    hp: 4
