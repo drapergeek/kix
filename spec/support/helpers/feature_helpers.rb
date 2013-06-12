@@ -17,7 +17,7 @@ module FeatureHelpers
   def fill_in_character_information(options = {})
     options = options.reverse_merge(default_character_options)
     fill_in 'Player name', with: options[:player_name]
-    fill_in 'Character name', with: options[:character_name]
+    select options[:character_name], from: 'Character'
     fill_in 'Max HP', with: options[:max_hp]
     click_on 'Create Character'
   end
