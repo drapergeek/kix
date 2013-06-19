@@ -14,6 +14,7 @@ gem 'bootstrap-sass'
 gem 'email_spec'
 gem 'simple_form'
 gem 'thin'
+gem 'airbrake'
 
 group :staging, :production do
   gem 'rails_log_stdout',           github: 'heroku/rails_log_stdout'
